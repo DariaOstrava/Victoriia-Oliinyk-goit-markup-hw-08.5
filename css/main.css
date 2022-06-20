@@ -320,7 +320,7 @@ ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-left: 250px;
+    padding-left: 260px;
   }
 }
 
@@ -335,7 +335,7 @@ ul {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .header__contacts-item {
-    margin-left: 30px;
+    margin-left: 35px;
   }
 }
 
