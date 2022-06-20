@@ -366,6 +366,9 @@ ul {
   .header__contacts-link {
     padding-top: 0px;
     font-size: 14px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
