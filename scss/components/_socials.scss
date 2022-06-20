@@ -1,0 +1,93 @@
+.socials__list {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.socials__item {
+width: 44px;
+height: 44px;
+justify-content: center;
+
+&:last-child {
+margin-right: 0;
+}
+
+&:not(:last-child) {
+margin-right: 10px;
+}
+}
+
+// Соц сети в секции Наша команда
+
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--background-body-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+        fill: var(--hero-title-color);
+
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+        fill:#FFFFFF;
+    }
+    }
+}
+
+.social__icon {
+    fill: var(--icon-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social__link:hover &,
+    .social__link:focus & {
+       
+        fill: var(--hero-title-color);
+    }
+}
+
+/*  Футер  */
+
+.footer-socials__list {
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__follow-box {
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+  
