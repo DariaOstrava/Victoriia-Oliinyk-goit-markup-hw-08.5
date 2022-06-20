@@ -320,7 +320,7 @@ ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-left: 230px;
+    padding-left: 270px;
   }
 }
 
@@ -413,47 +413,20 @@ ul {
   }
 }
 
-/*.hero-backgraund {
-    @media screen  and (min-width: 479px) {
-        display: flex;
-        margin: 0 auto;
-        max-width: 479px;
-        height: 400px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('https://github.com/DariaOstrava/goit-markup-hw-08_4/blob/main/img/background_lg.jpg?raw=true');
-        background-repeat: no-repeat;
-        background-color: #2F303A;
-        background-size: contain;
-        background-position: center;
-            
-          }
-    
-        @media screen  and (min-width: 768px) and (max-width: 1199px) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('https://github.com/DariaGood/goit-markup-hw-04/blob/main/img/backgraund.jpg?raw=true');
-            background-repeat: no-repeat;
-            background-color: #2F303A;
-            background-size: contain;
-            background-position: center;
-            }
-    
-        @media screen  and (min-width: 1200px) {
-            display: flex;
-            margin: 0 auto;
-            
-            max-width: 1600px;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('https://github.com/DariaGood/goit-markup-hw-04/blob/main/img/backgraund.jpg?raw=true');
-            background-repeat: no-repeat;
-            background-color: #2F303A;
-            background-size: contain;
-            background-position: center;
-                }
-
-    }
-
-    */
 .hero-backgraund {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: auto;
   margin-left: auto;
   height: 400px;
@@ -466,52 +439,106 @@ ul {
 @media screen and (max-width: 767.98px) {
   .hero-backgraund {
     max-width: 480px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(47, 48, 58, 0.4))), url(./img/background_sm.jpg);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(./img/background_sm.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm.jpg?raw=true);
   }
 }
 
-/*   .hero {
-    position: relative;
-       
-        @media screen  and (min-width: 479px) {
-            min-width: 479px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            padding: 0px 60px 0px 60px;
-            margin: 0px auto;
-            
-            }
-        
-            @media screen  and (min-width: 768px) and (max-width: 1199px) {
-                padding: 0px 60px 0px 60px;
-            }
-        
-            @media screen  and (min-width: 1200px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-                padding: 0px 60px 0px 60px;
-                margin: 0px auto;
-            }
-
-            
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .hero-backgraund {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm@2x.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm@2x.jpg?raw=true);
+  }
 }
-*/
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-backgraund {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md.jpg?raw=true);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
+  .hero-backgraund {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md@2x.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md@2x.jpg?raw=true);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-backgraund {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg.jpg?raw=true);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-backgraund {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg@2x.jpg?raw=true);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg@2x.jpg?raw=true);
+  }
+}
+
+.hero__caption-first {
+  max-width: 360px;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+@media screen and (min-width: 479px) {
+  .hero__caption-first {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__caption-first {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__caption-first {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+  }
+}
+
 .hero__button {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
   min-width: 200px;
-  color: var(--accent-color);
+  margin: 30px auto 0px auto;
+  color: var(--hero-caption-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -521,65 +548,6 @@ ul {
 .hero__button:hover, .hero__button:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (min-width: 479px) {
-  .hero__button {
-    top: 232px;
-    left: 140px;
-    padding: 10px 32px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero__button {
-    left: 284px;
-    top: 232px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__button {
-    left: 490px;
-    top: 350px;
-  }
-}
-
-.hero__caption-first {
-  position: absolute;
-  max-width: 360px;
-  margin: 0 auto;
-  font-size: 26px;
-  line-height: 42px;
-}
-
-@media screen and (min-width: 479px) {
-  .hero__caption-first {
-    top: 118px;
-    left: 60px;
-    font-size: 26px;
-    line-height: 42px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero__caption-first {
-    top: 118px;
-    left: 204px;
-    font-size: 26px;
-    line-height: 42px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__caption-first {
-    top: 200px;
-    left: 240px;
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 0.06em;
-  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1600,45 +1568,6 @@ ul {
   border-bottom: 1px solid var(--text-card-color);
   border-right: 1px solid var(--text-card-color);
   border-left: 1px solid var(--text-card-color);
-}
-
-.hero__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: 1px solid transparent;
-  min-width: 200px;
-  color: var(--hero-caption-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__button:hover, .hero__button:focus {
-  background-color: #188ce8;
 }
 
 .model-wrapper__button {

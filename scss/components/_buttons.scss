@@ -1,32 +1,4 @@
-.hero__button {
-    display: flex;
-    align-items: center;
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 32px;
-    border: 1px solid transparent;
-    min-width: 200px;
 
-    color: var(--hero-caption-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: #188ce8;
-    }
-}
 
 .model-wrapper__button {
     display: flex;

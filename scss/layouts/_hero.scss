@@ -1,46 +1,8 @@
-
-/*.hero-backgraund {
-    @media screen  and (min-width: 479px) {
-        display: flex;
-        margin: 0 auto;
-        max-width: 479px;
-        height: 400px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('https://github.com/DariaOstrava/goit-markup-hw-08_4/blob/main/img/background_lg.jpg?raw=true');
-        background-repeat: no-repeat;
-        background-color: #2F303A;
-        background-size: contain;
-        background-position: center;
-            
-          }
-    
-        @media screen  and (min-width: 768px) and (max-width: 1199px) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('https://github.com/DariaGood/goit-markup-hw-04/blob/main/img/backgraund.jpg?raw=true');
-            background-repeat: no-repeat;
-            background-color: #2F303A;
-            background-size: contain;
-            background-position: center;
-            }
-    
-        @media screen  and (min-width: 1200px) {
-            display: flex;
-            margin: 0 auto;
-            
-            max-width: 1600px;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('https://github.com/DariaGood/goit-markup-hw-04/blob/main/img/backgraund.jpg?raw=true');
-            background-repeat: no-repeat;
-            background-color: #2F303A;
-            background-size: contain;
-            background-position: center;
-                }
-
-    }
-
-    */
-
 .hero-backgraund {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     height: 400px;
@@ -49,58 +11,93 @@
     background-position: center;
     background-size: cover;
 
-@include mq(mobile-only) {
-    max-width: 480px;
-    background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(47, 48, 58, 0.4)),
-        url(./img/background_sm.jpg);
+    @include mq(mobile-only) {
+        max-width: 480px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm.jpg?raw=true);
+    
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+            url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_sm@2x.jpg?raw=true);
+        }
+        }
+
+        @include mq(tablet-only) {
+            max-width: 768px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+               url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md.jpg?raw=true);
+       
+               @include mq(retina) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+               url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_md@2x.jpg?raw=true);
+           }
+           }
+
+           @include mq(desktop) {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+           url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg.jpg?raw=true);
+   
+           @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+           url(https://github.com/DariaOstrava/goit-markup-hw-08.5/blob/main/img/background_lg@2x.jpg?raw=true);
+       }
+       }
+    
+    }
+
+
+.hero__caption-first {
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 42px;
+
+    @media screen  and (min-width: 479px) {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    @media screen  and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+      
+    
     }
 }
 
-     /*   .hero {
-    position: relative;
-       
-        @media screen  and (min-width: 479px) {
-            min-width: 479px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            padding: 0px 60px 0px 60px;
-            margin: 0px auto;
-            
-            }
-        
-            @media screen  and (min-width: 768px) and (max-width: 1199px) {
-                padding: 0px 60px 0px 60px;
-            }
-        
-            @media screen  and (min-width: 1200px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-                padding: 0px 60px 0px 60px;
-                margin: 0px auto;
-            }
-
-            
-}
-*/
 
 .hero__button {
-    position: absolute;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
     min-width: 200px;
+    margin: 30px auto 0px auto;
 
-    color: var(--accent-color);
+
+
+    color: var(--hero-caption-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
-
-    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     transition-property: box-shadow;
 
@@ -109,55 +106,6 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
-    @media screen  and (min-width: 479px) {
-        top:232px;
-        left:140px;
-        padding: 10px 32px;
-        
-          }
-    
-        @media screen  and (min-width: 768px) and (max-width: 1199px) {
-        left:284px;
-        top:232px;
-        }
-    
-        @media screen  and (min-width: 1200px) {
-        left:490px;
-        top:350px; 
-        }
     }
 
-
-.hero__caption-first {
-    
-    position: absolute;
-    max-width: 360px;
-    margin: 0 auto;
-    font-size: 26px;
-    line-height: 42px;
-
-    @media screen  and (min-width: 479px) {
-        top:118px;
-        left:60px;
-        font-size: 26px;
-        line-height: 42px;
-    }
-
-    @media screen  and (min-width: 768px) and (max-width: 1199px) {
-        top:118px;
-        left:204px;
-        font-size: 26px;
-        line-height: 42px;
-    }
-
-    @media screen  and (min-width: 1200px) {
-        top:200px;
-        left:240px;
-
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 60px;
-        letter-spacing: 0.06em;
-    
-    }
-}
+   
