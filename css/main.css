@@ -320,7 +320,7 @@ ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-left: 270px;
+    padding-left: 260px;
   }
 }
 
@@ -945,10 +945,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    margin: -15px;
+  }
+}
+
 .clients__item {
   width: 210px;
-  -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
-      flex-basis: calc((100% - 4 * 15px) / 2);
+  -ms-flex-preferred-size: calc((100%/2) - 30px);
+      flex-basis: calc((100%/2) - 30px);
   margin: 15px;
 }
 
@@ -1416,6 +1422,7 @@ ul {
 @media screen and (max-width: 767.98px) {
   .cards-set {
     display: block;
+    overflow: scroll;
   }
 }
 

@@ -11,13 +11,16 @@
       margin: -15px;
     }
   
-    @include mq(desktop) {}
+    @include mq(desktop) {
+      margin: -15px;
+    }
 }
 
 
 .clients__item {
   width: 210px;
-  flex-basis: calc((100% - 4 * 15px) / 2);
+  
+  flex-basis: calc((100%/2) - 30px);
   margin: 15px;
 
   @media screen and (max-width: 1199px) {

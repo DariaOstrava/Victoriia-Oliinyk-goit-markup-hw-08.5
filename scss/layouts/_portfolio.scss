@@ -30,17 +30,7 @@
   &:last-child {
     margin-right: 0;
   }
-  @media screen  and (min-width: 479px) {
-    
-  }
-
-  @media screen and (min-width: 768px) {
-   
-  }
-
-  @media screen and (min-width: 1200px) {
-
-  }
+  
 
 }
 
@@ -78,15 +68,15 @@
 }
 
 
-
-
 .portfolio {
     padding: 60px 0px;
   }
   
+  
   .cards-set {
     @include mq(mobile-only) {
       display: block;
+      overflow:scroll;
     }
     @include mq(tablet) {
       display: flex;
@@ -98,6 +88,7 @@
       flex-wrap: wrap;
       margin: -15px;
     }
+
   }
   
   .cards-set__item {
@@ -140,6 +131,8 @@
   .cards-set__blok {
     position: relative;
     overflow: hidden;
+
+    
   }
   
   .cards-set__text {
