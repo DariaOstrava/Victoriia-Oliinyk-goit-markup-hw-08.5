@@ -335,7 +335,7 @@ ul {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .header__contacts-item {
-    margin-left: 35px;
+    margin-left: 20px;
   }
 }
 
